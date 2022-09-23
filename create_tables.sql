@@ -144,12 +144,3 @@ CURRENT_TIMESTAMP,
 foreign key (admin_id) references Admins(user_id),
 foreign key (user_id) references Users(user_id)
 );
-create table EmailSent
-(
-id int auto_increment not null primary key,
-date_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE
-CURRENT_TIMESTAMP,
-email_address varchar(255),
-emial_subject varchar(255),
-email_body varchar(255)
-);
